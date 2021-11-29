@@ -18,6 +18,8 @@
 
 ---
 
+A fork version, patched for Amazon DocumentDB, work **almost** fine, more details please check commits.
+
 **Documentation**: [https://art049.github.io/odmantic/](https://art049.github.io/odmantic/)
 
 ---

@@ -1,13 +1,13 @@
 [tool.poetry]
-name = "ODMantic"
-version = "0.3.5"
-description = "ODMantic, an AsyncIO MongoDB Object Document Mapper for Python using type hints "
-authors = ["Arthur Pastel <arthur.pastel@gmail.com>"]
+name = "ODMantic-DocumentDB"
+version = "0.0.2"
+description = "ODMantic, patched for Amazon DocumentDB"
+authors = ["Arthur Pastel <arthur.pastel@gmail.com>", "Mio <liurusi.101@gmail.com>"]
 license = "ISC License"
 readme = "README.md"
-repository = "https://github.com/art049/odmantic"
-documentation = "https://art049.github.io/odmantic"
-keywords = ["mongodb", "asyncio", "types", "pydantic", "motor"]
+repository = "https://github.com/MioYvo/odmantic"
+documentation = "https://github.com/MioYvo/odmantic"
+keywords = ["mongodb", "asyncio", "types", "pydantic", "motor", "DocumentDB"]
 classifiers = [
     "Intended Audience :: Information Technology",
     "Intended Audience :: System Administrators",
@@ -35,6 +35,9 @@ classifiers = [
     "Programming Language :: Python",
 ]
 include = ["LICENSE", "README.md"]
+packages = [
+    {include = "odmantic"}
+]
 
 [tool.poetry.dependencies]
 python = ">=3.6,<4.0"
