@@ -98,3 +98,8 @@ branch = true
 include = ["odmantic/*", "tests/*"]
 omit = ["**/conftest.py"]
 exclude_lines = ["pragma: no cover", "if TYPE_CHECKING:", "@pytest.mark.skip"]
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+default = true

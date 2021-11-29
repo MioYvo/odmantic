@@ -152,7 +152,7 @@ class AIOEngine:
                         "$lookup": {
                             "from": odm_reference.model.__collection__,
                             "localField": odm_reference.key_name,
-                            "foreignField": ref_field_name,
+                            "foreignField": "_id",
                             "as": odm_reference.key_name
                             # FIXME if ref field name is an existing key_name ?
                         }
