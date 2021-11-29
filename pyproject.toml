@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "ODMantic-DocumentDB"
+name = "ODMantic"
 version = "0.0.2"
 description = "ODMantic, patched for Amazon DocumentDB"
 authors = ["Arthur Pastel <arthur.pastel@gmail.com>", "Mio <liurusi.101@gmail.com>"]
