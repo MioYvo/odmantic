@@ -711,6 +711,8 @@ class _BaseODMModel(pydantic.BaseModel, metaclass=ABCMeta):
                             loc=base_loc + (field_name,),
                         )
                     )
+                elif isinstance(sub_doc, ObjectId):
+                    obj[field_name] = sub_doc
                 else:
                     sub_errors, sub_obj = field.model._parse_doc_to_obj(
                         sub_doc, base_loc=base_loc + (field_name,)
